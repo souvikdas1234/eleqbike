@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title> ELEQBike: Electric Cycles - India's most Reliable E-Bikes </title>
+    <meta name="keywords" content="home automation, solar home kolkata, Rooftop solar , Lithium ion battery, Lithium battery, Lead Acid Battery, Battery, smart home, solar solution, invertor, iot devices, Lifo4, yo bike Battery, Ebike, electric bike, ebike battery,electric cycle, alexa automation, smart home automation, smart home devices, smart home appliances, smart home gadgets, smart home products, smart home companies.">
+    <meta name="description" content="ELEQBike - Premium E-Cycles brand of ELEQBike Cycles in India. Explore a wide range of electric cycles ranging from 25 KM to 80 KM per charge.">
+    <meta name="author" content="Sauvik Das">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/favicon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+      .register .nav-tabs .nav-link:hover{
+          border: none;
+      }
+      .text-align{
+          margin-top: -3%;
+          margin-bottom: -9%;
+
+          padding: 10%;
+          margin-left: 30%;
+      }
+      .form-new{
+          margin-right: 22%;
+          margin-left: 20%;
+      }
+      .register-heading{
+          margin-left: 21%;
+          margin-bottom: 10%;
+          color: #e9ecef;
+      }
+      .register-heading h1{
+          margin-left: 21%;
+          margin-bottom: 10%;
+          color: #e9ecef;
+      }
+      .register{
+          background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+          margin-top: 3%;
+          padding: 3%;
+          border-radius: 2.5rem;
+      }
+      .btnSubmit
+      {
+          width: 50%;
+          border-radius: 1rem;
+          padding: 1.5%;
+          color: #fff;
+          background-color: #03612e;
+          border: none;
+          cursor: pointer;
+          margin-right: 6%;
+          color: rgb(246, 246, 252);
+          margin-top: 4%;
+		  
+		}
+		
+		
+		* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+		
+		
+</style>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213384390-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213384390-1');
+</script>
+
+</head>
+<body>
+  <! Header >
+  <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="./static/favicon.png">
+         <span class="ml-3 text-xl">ELEQBike</span>
+       </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="https://www.eleqbike.in/">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="https://wa.me/p/4768299473230414/918617286972" >Profile</a>
+            <a class="mr-5 hover:text-gray-900" href="https://wa.me/p/4768299473230414/918617286972">Register</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"  ><a href="https://wa.me/p/4768299473230414/918617286972">Log in</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+      <!... Hero ...>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="object-cover object-center rounded" alt="hero" src="./static/img/Ebike.jpg">
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Switch to Green Lifestyle switch to Electric Lifestyle</h1>
+      <p class="mb-8 leading-relaxed">With rising levels of pollution and increasing petrol & diesel cost, there is a growing demand for electric bikes. People are exploring the electric vehicle option to commute daily from home to office, shopping, and nearby travelling. This will not only reduce their carbon footprint but also reduce the fuel cost to zero as these vehicles/ cycles/ bikes need to be recharged and not refuelled. There has been a rising interest in electric bikes among employees, doctors, professors, business owners, etc. </p>
+      <div class="flex justify-center">
+        <a class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" href="tel:8617286972">Call us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!....Compairasion ....>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="./static/img/BLDC.jpg">
+          <p class="leading-relaxed">If you have been looking for a 48V 1000W Brushless Dc Motor, then your search ends here. Get a high-standard Brush Controller for your electric bike at the best price at bhawan.co.in. To build your known e-bike, you’ll get all the assembly parts & kits here at bhawan.co.in at the best price! This Motor is the most important part of your E-Bike.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">48V 1000W Brushless Dc Motor</h2>
+          <p class="text-gray-500">For Bikes Convertion</p>
+        </div>
+      </div>
+      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="./static/img/electric-bike-hub-motor-500x500.jpg">
+          <p class="leading-relaxed">This 350W 36V Hub Motor for Electric Bike – Steel Colour is a new technology motor for converting your vehicle or cycle into Electric Bicycle. Brushless DC type and comes with internal planetary gears allow this motor extra torque. This hub motor is used with Spoke Wheels. This is a 350W 36V DC motor offers a good amount of acceleration and high speed.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">BLDC Hub Motor</h2>
+          <p class="text-gray-500">For Bicycle Convertion</p>
+        </div>
+      </div>
+      <div class="lg:w-1/3 lg:mb-0 p-4">
+        <div class="h-full text-center">
+          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="./static/img/pmdc.jpg">
+          <p class="leading-relaxed">This advanced and highest power/torque performing 250 watt PMDC (permanent Magnet dc motor) with the side motor kit and related peripherals will help you build a true electric engine within a few minutes. This kit comes with a powerful motor and accessories like double threaded hub, freewheel, copper motor binding, 8 Magnet Pedal Assist Sensor, and many more.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">PMDC Motor</h2>
+          <p class="text-gray-500">For Bicycle Convertion</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!... Map....>
+
+<section class="text-gray-600 body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    <iframe style="filter: grayscale(0) contrast(1.2) opacity(1);" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14714.339007418572!2d88.3752162!3d22.7807867!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b731648c96addd8!2sWe%20save%20Energy!5e0!3m2!1sen!2sin!4v1636319213590!5m2!1sen!2sin" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+  
+
+  <div class="container px-5 py-24 mx-auto flex">
+    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+          <h3>Email us- support@eleqbike.in </h3>
+          <h3>Call us- 86172 86972</h3>
+          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Type Your Requirements here</h2>
+          <form method="post" autocomplete="off" name="google-sheet">
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <div class="form-group">
+                  <input type="email" Name="Email" name="email" class="form-control"  value="" required=""/>
+                </div>
+            </div>
+            <div class="relative mb-4">
+            <div class="form-group">
+              <label for="Phone Number" class="leading-7 text-sm text-gray-600">Phone Number</label>
+              <input type="number" name="Phone" class="form-control" value="" required=""/>
+          </div>
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <div class="form-group">
+                <input type="text" name="Name" class="form-control" value="" required=""/>
+              </div>
+            </div>
+            <div class="form-group">
+             <input type="submit" name="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" class="form-control" value="Send" />
+            <p class="text-xs text-gray-500 mt-3">Bhawan Home Automation Palta Sreepally DN Hore Len Westbengal 743122.<br> GSTIN - 19FHJPD9881H1ZO</p>
+          </div>
+          </form>
+     </div> 
+  </div>
+</div>      
+</section>
+
+
+<div class="container">
+<br>
+<br>
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img_woods_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./static/img/image6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+
+
+<!...Galary ....>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/xyza.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">EleqOne</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EleqOne</h1>
+            <p class="leading-relaxed"> High Speed Electric Bicycle With 350W motor. Top Speed 45km/h with long life Lithium Ion battery 48V.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/jjjkk.jpeg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Turbo</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">High Speed electric Bicycle</h1>
+            <p class="leading-relaxed">High Speed Electric Bicycle With 500W motor. Top Speed 50km/h with long life Lithium Ion battery 48V.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/solar1.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mono Perc</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Customizable System</h1>
+            <p class="leading-relaxed">High Speed Electric Bicycle With 350W motor. Top Speed 35km/h with long life Lithium Ion battery 36V.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/solar.jpeg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Polycrystalline</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EleqMile</h1>
+            <p class="leading-relaxed">Customize first then order and get electric Bicycle of your choice</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/fff.jpeg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Hub Motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">250 W BLDC Hub Motor E-bike</h1>
+            <p class="leading-relaxed">Install high efficient BLDC hub motor this will give you 25 to 30 km/h Speed with good amount of torque. Sound less scilent Hub motor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/lipo24V.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Lithium Ion Battery</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">24V 15Ah Lithium Ion Battery</h1>
+            <p class="leading-relaxed">Replace your bulky big Lead Acid Battery with New Lithium ion technology batteries with 2times range and double speed and Power in 1/4th of the weight. Four time life than lead acid batteries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/hhj.jpeg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Hub Motor kits</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">DIY your Bicycle into Ebike</h1>
+            <p class="leading-relaxed">Buy Branded Ebike kit and install on your own all installation support will be provied from our site.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/pmdc.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">PMDC Gear motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">DIY your Bicycle into Ebike</h1>
+            <p class="leading-relaxed">Buy Branded Ebike kit and install on your own all installation support will be provied from our site.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/uy.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Hub Motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">250 W BLDC Hub Motor E-bike</h1>
+            <p class="leading-relaxed">Install high efficient BLDC hub motor this will give you 30 to 35 km/h Speed with good amount of torque. Sound less scilent Hub motor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/bike.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2000W Motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">70 km/h Speed Hub Motor </h1>
+            <p class="leading-relaxed">Convert your Petrol bike into Electric bike with superior torque and Speed. Cost ₹10 per 100KM.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/vvg.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">PMDC Gear motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Side Gear Motor </h1>
+            <p class="leading-relaxed">If you are searching for low cost ebike than this is for you, gives 25km/h speed with 100 Kg load capacity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./static/img/31.jpg">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Hub Motor</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">350 W BLDC Hub Motor E-bike</h1>
+            <p class="leading-relaxed">High speed Lithium ion e bike with scilent hub motor with installed planatory gears gives you extra ammount of torque to climb high.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      
+  <!... Footer ...>
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+           <img src="./static/favicon.png">
+        <span class="ml-3 text-xl">ELEQBike</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 ELEQBIKE —
+        <a href="https://www.instagram.com/ELEQBike/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Eleqbike</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+  
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYtmUyYgme3ZQH5qivaO9-jZXzTkfTxPdPdK3SGnrN0dA8QNz2Oyd9BP5mjJUbRODjFQ/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+	
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+  </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+</body>
+</html>
